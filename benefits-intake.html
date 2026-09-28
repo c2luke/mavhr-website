@@ -56,7 +56,7 @@
 </section>
 <main>
   <div class="container">
-    <form name="benefits-intake" method="POST" data-netlify="true">
+    <form name="benefits-intake" method="POST" action="/benefits-thank-you.html" data-netlify="true">
       <input type="hidden" name="form-name" value="benefits-intake">
       <section class="card">
         <h2>Company Information</h2>
@@ -77,7 +77,7 @@
 
       <section class="card">
         <h2>Current Premium Contribution</h2>
-        <p class="sub">If you currently offer coverage, enter the approximate percentage paid by the employee and by the company.</p>
+        <p class="sub">If you currently offer coverage, enter the approximate percentage paid by the employee and by the company. <strong>For each coverage row, Employee pays % + Company pays % should equal 100%.</strong> For example: 0% + 100%, 50% + 50%, or 25% + 75%.</p>
         <div class="contrib"><div class="head">Coverage level</div><div class="head">Employee pays %</div><div class="head">Company pays %</div></div>
         <div class="contrib"><strong>Employee</strong><input aria-label="Employee pays percent for employee coverage" type="number" min="0" max="100" name="employee-tier-employee-pays"><input aria-label="Company pays percent for employee coverage" type="number" min="0" max="100" name="employee-tier-company-pays"></div>
         <div class="contrib"><strong>Dependent #1</strong><input aria-label="Employee pays percent for dependent one" type="number" min="0" max="100" name="dependent1-employee-pays"><input aria-label="Company pays percent for dependent one" type="number" min="0" max="100" name="dependent1-company-pays"></div>
